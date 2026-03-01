@@ -8,3 +8,4 @@ langchain-google-genai
 pydantic
 
 python-decouple
+gradio
