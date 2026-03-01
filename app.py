@@ -37,7 +37,7 @@ def process_audio_for_ui(audio_filepath):
         return transcription, error_json
 
 
-with gr.Blocks(theme=gr.themes.Monochrome()) as demo:
+with gr.Blocks() as demo:
     gr.Markdown("# 📻 Tactical Radio Intercept Analyzer")
     gr.Markdown(
         "**R&D Project | Textual Information Classification using ASR and LLMs**"
@@ -72,4 +72,4 @@ with gr.Blocks(theme=gr.themes.Monochrome()) as demo:
 
 if __name__ == "__main__":
     # Launch the web server (standard launch for HF Spaces)
-    demo.launch()
+    demo.launch(theme=gr.themes.Monochrome())
